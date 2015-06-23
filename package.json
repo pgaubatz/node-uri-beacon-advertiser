@@ -1,0 +1,38 @@
+{
+  "name": "uri-beacon-advertiser",
+  "version": "0.1.0",
+  "description": "Emit UriBeacons using Node.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgaubatz/node-uri-beacon-advertiser.git"
+  },
+  "author": "Patrick Gaubatz <patrick@gaubatz.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgaubatz/node-uri-beacon-advertiser/issues"
+  },
+  "homepage": "https://github.com/pgaubatz/node-uri-beacon-advertiser#readme",
+  "keywords": [
+    "uribeacon",
+    "bluetooth",
+    "bluetooth low energy",
+    "ble",
+    "physical web"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec"
+  },
+  "dependencies": {
+    "bleno": "^0.1.13",
+    "uri-beacon-uri-encoding": "^1.1.4"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  }
+}
